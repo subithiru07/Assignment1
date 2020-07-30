@@ -1,25 +1,25 @@
- class Square implements Area1{
+ class Square implements Shapes1{
 
 	@Override
-	public void Area(Double a) {
+	public void Area(double side) {
 		// TODO Auto-generated method stub
-		System.out.println("Area of Square "+ a*a);
+		System.out.println("Area of Square "+ side*side);
 		
 	}
  }
-class Circle implements Area1{
+class Circle implements Shapes1{
 
 	@Override
-	public void Area(Double a) {
+	public void Area(double side) {
 		// TODO Auto-generated method stub
-		System.out.println("Area of Circle "+ 3.14*a*a);
+		System.out.println("Area of Circle "+ 3.14*side*side);
 		
 	}
 }
-class TriangleArea implements Area2{
+class TriangleArea implements Shape2{
 
 	@Override
-	public void Area(Double b, Double l) {
+	public void Area(double b, double l) {
 		// TODO Auto-generated method stub
 		System.out.println("Area of Triangle "+ 0.5*b*l);
 		
